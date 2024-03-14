@@ -1,0 +1,79 @@
+void main() {
+  // Imprimir hola mundo
+  print('Hola mundo');
+  
+  // Declarar 01
+  var opcion1 = "dato1";
+  print(opcion1);
+  // Declarar 02
+  var opcion2;
+  opcion2 = "dato2";
+  print(opcion2);
+  // Declarar 03
+  String opcion3 = "dato3";
+  print(opcion3);
+  
+  
+  // Declarar numeros
+  int numero1 = 10;
+  print(numero1);
+  double numero2 = 2.3;
+  print(numero2);
+  
+  // Listas y mapas
+  List numeros = [1,2,3,4,5];
+  print(numeros);
+  
+  List colores = ['rojo', 'verde', 'azul'];
+  print(colores);
+  
+  // Acceder al primer elemento de numeros
+  print(numeros[0]);
+  
+  // Acceder al segundo elemento de colores
+  print(colores[1]);
+  
+  // Añadir el numero 6 y el color amarillo
+  numeros.add(6);
+  print(numeros);
+  colores.add('amarillo');
+  print(colores);
+  
+  // Iterar a numeros e imprimir
+  for (int i = 0; i < numeros.length; i++) {
+    print(numeros[i]);
+  }
+  
+  // Iterar sobre colores e imprimir
+  for (int i = 0; i < colores.length; i++) {
+    print(colores[i]);
+  }
+  
+  // Mapas
+   Map <String, dynamic> persona = {
+    'nombre': 'juan',
+    'edad': 30,
+    'ciudad': 'Madrid'
+  };
+  
+  // Accediendo a nombre e imprimiendo
+  print(persona['nombre']);
+  
+  // Accediendo a edad e imprimiendo
+  print(persona['edad']);
+  
+  // Modificando edad
+  persona['edad'] = 35;
+  print(persona['edad']);
+  
+  // Agregando profesion
+  persona['profesion'] = 'ingeniero';
+  print(persona);
+  
+  // Iterar persona
+  for (var key in persona.keys) {
+    var value = persona[key];
+    print('$key: $value');
+  }
+  
+}
